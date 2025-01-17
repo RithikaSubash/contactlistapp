@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteTestNG]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestTestNG1(failed)">
+    <classes>
+      <class name="tests.ContactListPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLogoutRedirectsToLoginPage"/>
+          <include name="verifyLogoutButtonVisible"/>
+        </methods>
+      </class> <!-- tests.ContactListPageTests -->
+      <class name="tests.SignUpPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySignUpWithMissingFields"/>
+          <include name="verifySignUpWithValidDetails"/>
+        </methods>
+      </class> <!-- tests.SignUpPageTests -->
+      <class name="tests.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="verifyLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- tests.LoginPageTest -->
+      <class name="tests.HomePageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySignUpButtonVisible"/>
+          <include name="verifySignUpButtonClickable"/>
+          <include name="verifyLoginButtonVisible"/>
+        </methods>
+      </class> <!-- tests.HomePageTests -->
+    </classes>
+  </test> <!-- TestTestNG1(failed) -->
+</suite> <!-- Failed suite [SuiteTestNG] -->
